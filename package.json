@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drminnaar/react-starter.git"
+    "url": "git+https://github.com/Tomaszunek/prohuman.games"
   },
   "license": "MIT",
   "babel": {
@@ -60,6 +60,8 @@
   "dependencies": {
     "normalize.css": "^8.0.0",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1"
   }
 }

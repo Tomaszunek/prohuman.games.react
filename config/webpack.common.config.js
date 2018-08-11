@@ -6,7 +6,7 @@ const commonPaths = require('./common-paths');
 
 const config = {
     entry: {
-        main: ['./src/index.js']
+        main: ['./src/index.jsx']
     },
     output: {
         filename: '[name].js',
@@ -16,7 +16,7 @@ const config = {
         rules: [
             {
                 enforce: 'pre',
-                test: /\.js$/,
+                test: /\.jsx$/,
                 loader: 'eslint-loader',
                 options: {
                     failOnWarning: true,
@@ -25,7 +25,7 @@ const config = {
                 exclude: /node_modules/
             },
             {
-                test: /\.js$/,
+                test: /\.jsx$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },

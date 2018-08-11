@@ -6,7 +6,7 @@ module.exports = (env) => {
     const determineAddons = (addons) => {
         return [...[addons]]
             .filter(addon => Boolean(addon))
-            .map(addon => require(`./config/addons/webpack.${addon}.js`));
+            .map(addon => require(`./config/addons/webpack.${addon}.jsx`));
     };
 
     const envConfig = require(`./config/webpack.${env.env}.config`);
