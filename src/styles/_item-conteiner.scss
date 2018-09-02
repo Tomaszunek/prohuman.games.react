@@ -1,0 +1,32 @@
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+.items-cont {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: auto;
+    padding: 5px 0px 5px 21px;
+
+
+    @media (max-width: $breakpoint-lg) {
+        grid-template-columns: repeat(3, 32%);
+    }
+
+    @media (max-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 53%);
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        grid-template-columns: repeat(1, 98%);
+    }
+
+    .news-item {        
+
+        &:hover {
+            -webkit-transform: translate(0, 0) scale(1.05);
+            transform: translate(0, 0) scale(1.05);
+        }
+    }
+}

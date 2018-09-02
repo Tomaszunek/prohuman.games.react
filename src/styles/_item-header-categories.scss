@@ -1,0 +1,27 @@
+.item-header-categories {
+    background-color: rgba(62, 62, 62, 0.72);
+
+    .item-header-categories-cont {
+        float: right;
+        padding-right: 15px;
+
+        .category {
+            border-radius: 90px;
+            padding: 9px 13px;
+            font-size: 12px;
+
+            &.universum {
+                background-color: blue;
+
+                &.fantasy {
+                    color: red;
+                }
+
+                &.apo {
+                    color: aquamarine;
+                }
+            }
+        }
+        
+    }    
+}
