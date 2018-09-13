@@ -1,0 +1,63 @@
+nav.navigation {
+    background-color: rgba(0.7, 0.7, 0.7, 0.2);
+    color: white;
+    font-size: 26px;
+    text-shadow: 2px gray;
+    //position: absolute;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9999999999;
+
+
+    &.white_background {
+        background-color:   rgba(251, 251, 251, 0.97);
+        font-size: 21px;
+        a {
+            color: black;
+        }
+
+        .navigation__logo {
+            margin-right: 185px;
+        }
+
+        .navigation__account {
+            margin-left: 220px;       
+        }
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navigation__logo {
+        float: left;
+        margin-right: 155px;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+
+    ul {
+        float: left;
+
+        li {
+            display: inline-block;
+            margin: 0 20px 0 20px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        li:hover {
+            background-color: rgb(34, 134, 134);
+        }
+    }
+
+    .navigation__account {
+        float: left;
+        margin-top: 25px;
+        margin-left: 175px;       
+    }
+}

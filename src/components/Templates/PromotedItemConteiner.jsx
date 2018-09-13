@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import NewsItem from '../Templates/NewsItem.jsx';
 
-export default class ItemConteiner extends Component {    
+export default class PromotedItemConteiner extends Component {    
 
     constructor(props) {
-        super(props);        
+        super(props);
     }
 
     listItems(items) {
@@ -16,13 +16,13 @@ export default class ItemConteiner extends Component {
 
     render() {
         return (           
-            <div className="items-cont">                               
-                {this.listItems(this.props.items)}
+            <div className="promoted-items">                               
+                {this.listItems(this.props.promotedItems)}
             </div>
         );
     }
 }
 
-ItemConteiner.propTypes = {
-    items: PropTypes.array
+PromotedItemConteiner.propTypes = {
+    promotedItems: PropTypes.array
 };

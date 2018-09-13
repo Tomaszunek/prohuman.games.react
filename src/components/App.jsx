@@ -1,23 +1,33 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
 import Navigation from './Navigation/Navigation.jsx';
 import Footer from './Footer/Footer.jsx';
+import MainPage from './MainPage/MainPage.jsx';
+import AboutPage from './AboutPage/AboutPage.jsx';
+
+import {
+    BrowserRouter as Router,
+    Route    
+} from 'react-router-dom';
+
 
 export default class App extends Component {
 
     constructor() {
         super();
-    }
+    }    
 
     render() {
         return (
-           
-            <div className='container'>
-                <Navigation/>                
-                <img className='logo' src={logo} />
-                <h1 className='title'>React Starter</h1>
+            <div>  
+                <Navigation/>          
+                <Router>
+                    <div className="container">
+                        <Route exact path="/" component={MainPage} />
+                        <Route exact path="/about" component={AboutPage} />
+                    </div>                    
+                </Router>
                 <Footer/>
             </div>
-        );
+        );  
     }
 }

@@ -1,0 +1,15 @@
+.item-header{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: auto;
+    
+    .item-header-body {
+
+    }
+    .item-header-name {
+        opacity: 0.9;
+        background-color: #1F1f1f;
+        height: 70%;        
+    }
+}
