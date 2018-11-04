@@ -16,7 +16,7 @@ export default class SearchContainer extends Component {
 
     componentDidMount() {
         const { typeSearch } = this.props;
-        fetch('http://localhost:3000/api/search-content')
+        fetch('https://apiprohuman.herokuapp.com/api/search-content')
             .then(response => response.json())
             .then(data => this.setState({
                 items: data.result[typeSearch]

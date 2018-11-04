@@ -19,7 +19,7 @@ export default class MainPage extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/api/mainpage/content')
+        fetch('https://apiprohuman.herokuapp.com/api/mainpage/content')
             .then(response => response.json())
             .then(data => this.setState({ 
                 slides: data.result.slides,
