@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
+import SearchContainer from '../Templates/SearchContainer.jsx';
 
 export default class ShopPage extends Component {
 
     constructor() {
         super();
+
+        this.state = {
+            items: []
+        };
     }
 
     render() {
-        return (
-            <section>           
-                <p>ShopPage</p>
+        return (            
+            <section>
+                <SearchContainer typeSearch='products'/>
             </section>
         );
     }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import { 
+    NavLink    
+} from 'react-router-dom';
 export default class Navigation extends Component {
     
     constructor(props) {
@@ -30,36 +32,33 @@ export default class Navigation extends Component {
         const style = {
             top: this.state.height
         };
-        return (           
+        return (
             <nav className={this.state.white_background} style={style}>                             
                 <div className='navigation__logo'>
-                    <a href="/">
-                        ProHuman Games
-                    </a>
+                    <NavLink to="/">ProHuman Studio</NavLink>
                 </div>
                 <ul>                    
                     <li>
-                        <a href="/news">News</a>
+                        <NavLink to="/news">News</NavLink>
                     </li>
                     <li>
-                        <a href="/projects">Projects</a>
+                        <NavLink to="/projects">Projects</NavLink>
                     </li>
                     <li>
-                        <a className="navigation__shop" href="/shop">Shop</a>
+                        <NavLink className="navigation__shop" to="/shop">Shop</NavLink>
                     </li>
                     <li>
-                        <a href="/about">About us</a>
+                        <NavLink to="/about">About us</NavLink>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
                 <div className="navigation__account">
-                    <a href="/account">Account</a>
+                    <NavLink to="/account">Account</NavLink>
                 </div>
                 <div className="clearfix"></div>
-            </nav>
-            
+            </nav>               
         );
     }
 }

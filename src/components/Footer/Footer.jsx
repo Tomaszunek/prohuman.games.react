@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { 
+    NavLink    
+} from 'react-router-dom';
 
 export default class Footer extends Component {
 
@@ -10,20 +13,20 @@ export default class Footer extends Component {
         return (           
             <footer>                             
                 <div className="footer-link-cont">
-                    <a href="">Home</a>
-                    <a href="">Shop</a>
-                    <a href="">Contact</a>
-                    <a href="">News</a>
-                    <a href="">LinkedIN</a>
-                    <a href="">Twitch</a>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/shop">Shop</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/news">News</NavLink>
+                    <NavLink to="/linkedin">LinkedIN</NavLink>
+                    <NavLink to="/twitch">Twitch</NavLink>
                 </div>
                 <div className="footer-link-cont">
-                    <a href="">Projects</a>
-                    <a href="">About us</a>
-                    <a href="">Account</a>
-                    <a href="">Yoututbe</a>
-                    <a href="">Facebook</a>
-                    <a href="">Pinterest</a>
+                    <NavLink to="/projects">Projects</NavLink>
+                    <NavLink to="/about">About us</NavLink>
+                    <NavLink to="/account">Account</NavLink>
+                    <NavLink to="/youtube">Yoututbe</NavLink>
+                    <NavLink to="/facebook">Facebook</NavLink>
+                    <NavLink to="/pintrest">Pinterest</NavLink>
                 </div>
             </footer>
         );
